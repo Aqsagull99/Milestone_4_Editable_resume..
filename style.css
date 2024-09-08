@@ -1,0 +1,209 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(https://i.pinimg.com/564x/10/71/49/1071496f32dd125c03bcaf6ad4b10e00.jpg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+form {
+    background-color: #5A0F28; 
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(255, 255, 0, 0.75);
+    padding: 40px;
+    width: 400px;
+    margin: 20px auto; 
+    animation: fadeIn 1s ease;
+    margin-top: 50px;
+}
+
+
+
+ @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+
+
+
+
+form h2 {
+    color: white !important;
+    font-size: 28px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+label {
+    display: block;
+    font-size: 14px;
+     /* color: #333;  */
+     color: white !important;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+
+
+
+input {
+    width: 100%;
+    padding: 12px 15px; 
+    padding-right: 3px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 0, 0.5); 
+}
+
+
+input:hover {
+    box-shadow: 0 6px 15px rgba(255, 255, 0, 0.7); 
+}
+
+
+
+label + input {
+    margin-top: 5px;
+}
+
+
+input:focus {
+    
+     border-color: black !important;
+     border-style: dotted;
+    outline: none;
+}
+
+
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    background-color: rgb(233, 233, 94) !important;;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+
+button:hover {
+    background-color: yellow;
+    box-shadow: 0 6px 15px rgba(255, 255, 0, 0.7); 
+
+
+    transform: translateY(-3px);
+}
+
+
+.resume {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 600px;
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease;
+}
+
+
+.resume h1 {
+    font-size: 36px;
+    color: #4A90E2;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.resume h2 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.resume p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.resume ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resume ul li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.resume ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #4A90E2;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+.whatsapp-float {
+    /* position: fixed; */
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+ 
+  }
+ 
+  .whatsapp-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 350px;
+    margin-top: 10px;
+ 
+  }
